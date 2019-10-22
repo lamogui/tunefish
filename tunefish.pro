@@ -22,6 +22,7 @@ HEADERS += \
 SOURCES += \
 	array.cpp \
 	datastream.cpp \
+  random.cpp \
 	runtime.cpp \
 	simd.cpp \
 	tf4.cpp \
