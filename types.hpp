@@ -34,7 +34,7 @@
 #endif
 #endif
 
-#ifndef _WIN32
+#if !defined( _WIN32 ) || defined( __MINGW32__ ) 
 #include <inttypes.h>
 #endif
 
@@ -79,7 +79,7 @@ typedef short                   eS16;
 typedef unsigned int            eU32;
 typedef int                     eS32;
 typedef float                   eF32;
-#ifdef _WIN32
+#if defined( _WIN32 ) && !defined( __MINGW32__ )
 typedef unsigned __int64        eU64;
 typedef signed __int64          eS64;
 #else
